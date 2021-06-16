@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { getUsers } from '../../actions';
@@ -15,10 +15,10 @@ const HomeComponent = () => {
     return(
         <div>
             {users.map((user) => (
-                <p>{user.user_type}</p>
+                <p key={user._id}>{user.user_type}</p>
             ))}
         </div>
-    )
-}
+    );
+};
 
-export default HomeComponent
+export default HomeComponent;

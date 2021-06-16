@@ -7,6 +7,8 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "env-cmd": "^10.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.4",
@@ -16,11 +18,11 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "env-cmd react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint":"eslint ./"
+    "lint": "eslint ./"
   },
   "eslintConfig": {
     "extends": [
@@ -40,12 +42,26 @@
       "last 1 safari version"
     ]
   },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": " webpack-merge, create different webpack config files which read different .env files.",
   "devDependencies": {
     "eslint": "^7.28.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0"
-  }
+    "eslint-plugin-react": "^7.24.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ipt #vue #showdev #architecture"
+  },
+  "keywords": [
+    "React",
+    "vs",
+    "Vue:",
+    "my",
+    "personal",
+    "point",
+    "of",
+    "view"
+  ],
+  "author": "#vue #react #javascript #showdev",
+  "license": "ISC"
 }

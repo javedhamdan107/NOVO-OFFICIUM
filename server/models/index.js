@@ -10,6 +10,6 @@ const seekerSchema = mongoose.Schema({
     mobile_num: String,
     image: String,
     user_type: String,
-})
+});
 
-export default mongoose.model("Seeker", seekerSchema);
+export default mongoose.model('Seeker', seekerSchema);

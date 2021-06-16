@@ -9,15 +9,14 @@ import Routes from './routes/index.js';
 const app = express();
 dotenv.config();
 
-app.use(bodyParser.json({ limit: "30mb", extended: true}));
-app.use(bodyParser.urlencoded({ limit: "30mb", extended: true}));
+app.use(bodyParser.json({ limit: '30mb', extended: true }));
+app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
 app.use(cors());
 
-app.use('/user',Routes);
+app.use('/user', Routes);
 
-app.get('/', (req,res) => {
+app.get('/', (req, res) => {
     res.send('Hello to Job Portal API');
-    console.log("hi");
 });
 
 const PORT = process.env.PORT || 5000;

@@ -6,7 +6,7 @@ const Home = () => {
         <div>
             <HomeComponent />
         </div>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;

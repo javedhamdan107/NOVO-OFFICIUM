@@ -1,8 +1,6 @@
 import Seeker from '../models/index.js';
 
-export const get_user = async () => {
-
+export const getUserService = async () => {
     const User = await Seeker.find();
     return User;
-
-}
+};

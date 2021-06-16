@@ -1,5 +1,7 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5000' });
+const {REACT_APP_DB} = process.env;
+
+const API = axios.create({ baseURL: REACT_APP_DB });
 
 export const fetchUsers = () => API.get('/user');
