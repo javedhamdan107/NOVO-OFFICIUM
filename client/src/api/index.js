@@ -1,7 +1,9 @@
 import axios from 'axios';
 
-const {REACT_APP_DB} = process.env;
+import config from '../config.js';
 
-const API = axios.create({ baseURL: REACT_APP_DB });
+const URL = config.REACT_APP_DB_URL;
+
+const API = axios.create({ baseURL: URL });
 
 export const fetchUsers = () => API.get('/user');

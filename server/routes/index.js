@@ -1,9 +1,7 @@
-import express from 'express';
+import Routes from './user.js';
 
-import { getUser } from '../controllers/index.js';
+const useRoute = (app) => {
+  app.use('/user', Routes);
+};
 
-const router = express.Router();
-
-router.get('/', getUser);
-
-export default router;
+export default useRoute;
